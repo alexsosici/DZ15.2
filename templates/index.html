@@ -7,5 +7,11 @@
 
     <body>
         <h1>Welcome to my homepage</h1>
+    {% block content %}
+    <p>Ovo je poruka iz index.html za homepage</p>
+
+    <p>{{some_text}}</p>
+    <p>Trenutna godina je : {{current_year}}</p>
+{% endblock content %}
     </body>
 </html>
